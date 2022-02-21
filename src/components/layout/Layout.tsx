@@ -8,7 +8,7 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const classes = {
+const className = {
   root: `flex flex-col min-h-screen`,
   main: `relative grow`,
 };
@@ -25,9 +25,9 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   `);
 
   return (
-    <div className={classes.root}>
+    <div className={className.root}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main className={classes.main}>{children}</main>
+      <main className={className.main}>{children}</main>
     </div>
   );
 };
