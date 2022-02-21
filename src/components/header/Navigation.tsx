@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const className = {
   root: `flex gap-4 text-white`,
-  link: `text-md text-white hover:underline decoration-2 decoration-blue-500 underline-offset-4`,
+  link: `text-md text-white hover:underline decoration-4 decoration-blue-500 underline-offset-4`,
   activeLink: `underline`,
 };
 
