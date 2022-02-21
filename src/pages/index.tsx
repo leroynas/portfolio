@@ -1,5 +1,9 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import IconButton, {
+  IconButtonSizes,
+  IconButtonVariants,
+} from '../components/common/iconButton/IconButton';
 
 import Layout from '../components/layout/Layout';
 
@@ -8,6 +12,7 @@ const className = {
   container: `max-w-5xl mx-auto flex items-center`,
   title: `w-2/3 font-semibold text-6xl text-white leading-snug`,
   image: `w-1/3 ml-16`,
+  next: `absolute bottom-24`,
 };
 
 const IndexPage = () => (
@@ -28,6 +33,14 @@ const IndexPage = () => (
           alt="Leroy Nas"
         />
       </div>
+
+      <IconButton
+        className={className.next}
+        to="/about"
+        variant={IconButtonVariants.ArrowDown}
+        size={IconButtonSizes.Large}
+        bounce
+      />
     </div>
   </Layout>
 );
