@@ -161,6 +161,8 @@ const IndexPage = () => (
       <Heading size={HeadingSizes.Medium}>Work experience</Heading>
 
       <Timeline>
+        <TimelineItem title="Now" />
+
         {experiences.map((experience) => (
           <TimelineItem
             key={experience.company}
