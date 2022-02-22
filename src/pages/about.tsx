@@ -1,10 +1,10 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import Container from '../components/container/Container';
-import Heading, { HeadingSizes } from '../components/heading/Heading';
+import Container from '../components/common/container/Container';
+import Heading, { HeadingSizes } from '../components/common/heading/Heading';
+import Text, { TextSizes } from '../components/common/text/Text';
 import Layout from '../components/layout/Layout';
-import Text, { TextSizes } from '../components/text/Text';
 
 const className = {
   root: `flex items-start`,

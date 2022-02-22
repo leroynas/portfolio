@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Container from '../components/container/Container';
-import Heading, { HeadingSizes } from '../components/heading/Heading';
+import Container from '../components/common/container/Container';
+import Heading, { HeadingSizes } from '../components/common/heading/Heading';
+import Pane from '../components/common/pane/Pane';
+import Stack from '../components/common/stack/Stack';
+import Text, { TextSizes } from '../components/common/text/Text';
 import Layout from '../components/layout/Layout';
-import Pane from '../components/pane/Pane';
-import Stack from '../components/stack/Stack';
-import Text, { TextSizes } from '../components/text/Text';
 import Timeline from '../components/timeline/Timeline';
 import TimelineItem from '../components/timeline/TimelineItem';
 

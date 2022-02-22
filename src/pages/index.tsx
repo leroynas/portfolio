@@ -1,11 +1,11 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import Heading, { HeadingSizes } from '../components/heading/Heading';
+import Heading, { HeadingSizes } from '../components/common/heading/Heading';
 import IconButton, {
   IconButtonSizes,
   IconButtonVariants,
-} from '../components/iconButton/IconButton';
+} from '../components/common/iconButton/IconButton';
 import Layout from '../components/layout/Layout';
 
 const className = {
