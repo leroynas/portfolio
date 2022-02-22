@@ -10,12 +10,14 @@ export enum TextSizes {
 interface TextProps {
   size?: TextSizes;
   muted?: boolean;
+  bold?: boolean;
   children: ReactNode;
 }
 
 const className = {
   root: `text-gray-900 leading-normal`,
   muted: `text-gray-500`,
+  bold: `font-semibold`,
   sizes: {
     [TextSizes.Small]: 'text-sm',
     [TextSizes.Medium]: 'text-md',
@@ -26,13 +28,15 @@ const className = {
 const Text: FunctionComponent<TextProps> = ({
   size = TextSizes.Medium,
   muted = false,
+  bold = false,
   children,
 }) => (
   <div
     className={classNames(
       className.root,
       className.sizes[size],
-      muted && className.muted
+      muted && className.muted,
+      bold && className.bold
     )}
   >
     {children}
