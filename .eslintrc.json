@@ -20,17 +20,27 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "@typescript-eslint",
+    "simple-import-sort",
+    "unused-imports"
+  ],
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": "error",
+    "simple-import-sort/imports": "error",
     "react/function-component-definition": [
       2,
       { "namedComponents": "arrow-function" }
     ],
-    "no-console": ["error"],
+    "no-console": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/require-default-props": 0
+    "react/require-default-props": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "unused-imports/no-unused-imports": "error"
   },
   "ignorePatterns": ["**/*.js"]
 }
