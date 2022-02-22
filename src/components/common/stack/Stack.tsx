@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 
 const className = {
-  root: `flex flex-col gap-3 py-2`,
+  root: `flex flex-col gap-3`,
 };
 
 interface StackProps {
