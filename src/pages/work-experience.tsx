@@ -5,7 +5,7 @@ import Heading, { HeadingSizes } from '../components/heading/Heading';
 import Layout from '../components/layout/Layout';
 import Pane from '../components/pane/Pane';
 import Stack from '../components/stack/Stack';
-import Text from '../components/text/Text';
+import Text, { TextSizes } from '../components/text/Text';
 import Timeline from '../components/timeline/Timeline';
 import TimelineItem from '../components/timeline/TimelineItem';
 
@@ -170,11 +170,13 @@ const IndexPage = () => (
             <Stack>
               {experience.skills.map((skill) => (
                 <Pane key={skill}>
-                  <Text>{skill}</Text>
+                  <Text size={TextSizes.Small}>{skill}</Text>
                 </Pane>
               ))}
 
-              <Text muted>Stack: {experience.stack.join(', ')}</Text>
+              <Text size={TextSizes.Small} muted>
+                Stack: {experience.stack.join(', ')}
+              </Text>
             </Stack>
           </TimelineItem>
         ))}
