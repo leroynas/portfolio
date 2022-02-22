@@ -15,8 +15,8 @@ interface TextProps {
 }
 
 const className = {
-  root: `text-gray-900 leading-normal`,
-  muted: `text-gray-500`,
+  root: `text-zinc-900 leading-normal`,
+  muted: `text-zinc-500`,
   bold: `font-semibold`,
   sizes: {
     [TextSizes.Small]: 'text-sm',

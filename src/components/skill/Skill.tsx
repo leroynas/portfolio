@@ -4,7 +4,7 @@ import Text from '../common/text/Text';
 
 const className = {
   root: `flex justify-between items-center`,
-  bar: `w-36 h-2 rounded-sm bg-gray-200`,
+  bar: `w-36 h-2 rounded-sm bg-zinc-200`,
   indicator: `h-2 rounded-sm bg-blue-500`,
 };
 

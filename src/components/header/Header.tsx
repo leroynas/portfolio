@@ -8,7 +8,7 @@ interface HeaderProps {
 }
 
 const className = {
-  root: `bg-gray-900`,
+  root: `bg-zinc-900`,
   container: `max-w-5xl mx-auto px-8 py-6 flex justify-between`,
   title: `text-lg font-bold text-white`,
 };
