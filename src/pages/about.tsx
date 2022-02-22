@@ -3,10 +3,32 @@ import React from 'react';
 
 import Container from '../components/common/container/Container';
 import Heading, { HeadingSizes } from '../components/common/heading/Heading';
+import Pane from '../components/common/pane/Pane';
 import Stack from '../components/common/stack/Stack';
 import Text, { TextSizes } from '../components/common/text/Text';
 import Layout from '../components/layout/Layout';
 import Skill from '../components/skill/Skill';
+
+const schools = [
+  {
+    title: 'HAVO Natuur & Techniek',
+    name: 'Merletcollege Cuijk',
+    period: '2009-2015',
+  },
+  {
+    title: 'MBO Certificate in Software Engineering',
+    name: 'ROC de Leijgraaf',
+    period: '2015-2018',
+  },
+];
+
+const certificates = [
+  {
+    title: 'React Nanodegree',
+    provider: 'Udacity',
+    period: '2019 - PRESENT',
+  },
+];
 
 const languages = [
   {
@@ -89,21 +111,43 @@ const IndexPage = () => (
 
           <Heading size={HeadingSizes.Small}>Education</Heading>
 
-          <Text size={TextSizes.Large}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-            fuga asperiores voluptatem accusamus magnam voluptatum excepturi
-            ipsum? Nesciunt aperiam possimus, deleniti maiores saepe impedit
-            sint quam odit, maxime illo dignissimos!
-          </Text>
+          <Stack>
+            {schools.map((school) => (
+              <Pane key={school.period} between>
+                <div>
+                  <Text size={TextSizes.Small} bold>
+                    {school.title}
+                  </Text>
+
+                  <Text size={TextSizes.Small}>{school.name}</Text>
+                </div>
+
+                <Text size={TextSizes.Small} muted>
+                  {school.period}
+                </Text>
+              </Pane>
+            ))}
+          </Stack>
 
           <Heading size={HeadingSizes.Small}>Certification</Heading>
 
-          <Text size={TextSizes.Large}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-            fuga asperiores voluptatem accusamus magnam voluptatum excepturi
-            ipsum? Nesciunt aperiam possimus, deleniti maiores saepe impedit
-            sint quam odit, maxime illo dignissimos!
-          </Text>
+          <Stack>
+            {certificates.map((certificate) => (
+              <Pane key={certificate.period} between>
+                <div>
+                  <Text size={TextSizes.Small} bold>
+                    {certificate.title}
+                  </Text>
+
+                  <Text size={TextSizes.Small}>{certificate.provider}</Text>
+                </div>
+
+                <Text size={TextSizes.Small} muted>
+                  {certificate.period}
+                </Text>
+              </Pane>
+            ))}
+          </Stack>
 
           <Heading size={HeadingSizes.Small}>Hobbies</Heading>
 
