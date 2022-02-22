@@ -3,8 +3,56 @@ import React from 'react';
 
 import Container from '../components/common/container/Container';
 import Heading, { HeadingSizes } from '../components/common/heading/Heading';
+import Stack from '../components/common/stack/Stack';
 import Text, { TextSizes } from '../components/common/text/Text';
 import Layout from '../components/layout/Layout';
+import Skill from '../components/skill/Skill';
+
+const languages = [
+  {
+    title: 'HTML',
+    alpha: 1,
+  },
+  {
+    title: 'CSS',
+    alpha: 1,
+  },
+  {
+    title: 'Javascript',
+    alpha: 0.8,
+  },
+  {
+    title: 'Typescript',
+    alpha: 0.8,
+  },
+  {
+    title: 'PHP',
+    alpha: 0.5,
+  },
+];
+
+const libraries = [
+  {
+    title: 'React',
+    alpha: 0.9,
+  },
+  {
+    title: 'Gatsby',
+    alpha: 0.9,
+  },
+  {
+    title: 'Vue',
+    alpha: 0.8,
+  },
+  {
+    title: 'Redux',
+    alpha: 0.7,
+  },
+  {
+    title: 'Node',
+    alpha: 0.7,
+  },
+];
 
 const className = {
   root: `flex items-start`,
@@ -77,7 +125,29 @@ const IndexPage = () => (
             alt="Leroy Nas"
           />
 
-          <Heading size={HeadingSizes.Small}>Skills</Heading>
+          <Heading size={HeadingSizes.Small}>Languages</Heading>
+
+          <Stack>
+            {languages.map((language) => (
+              <Skill
+                key={language.title}
+                title={language.title}
+                alpha={language.alpha}
+              />
+            ))}
+          </Stack>
+
+          <Heading size={HeadingSizes.Small}>Libraries</Heading>
+
+          <Stack>
+            {libraries.map((library) => (
+              <Skill
+                key={library.title}
+                title={library.title}
+                alpha={library.alpha}
+              />
+            ))}
+          </Stack>
         </aside>
       </div>
     </Container>
