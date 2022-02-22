@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 
 const className = {
-  root: `max-w-5xl mx-auto p-8`,
+  root: `max-w-5xl mx-auto px-8 py-16`,
 };
 
 interface ContainerProps {
