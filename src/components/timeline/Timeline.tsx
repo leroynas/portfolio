@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 
 const className = {
-  root: `relative border-l border-gray-200`,
+  root: `relative border-l border-gray-200 translate-y-4`,
 };
 
 interface TimelineProps {
