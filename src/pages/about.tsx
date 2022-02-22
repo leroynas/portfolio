@@ -93,20 +93,19 @@ const IndexPage = () => (
           <Text size={TextSizes.Large}>
             After graduating I directly started working at my last internship.
             This was a digital agency that gave me a lot of time and freedom to
-            develop myself with new technologies and soft skills. I’ve been
+            develop myself with new technologies and soft skills. I&apos;ve been
             working for 5 years of different frontend projects (react/vue) and
             the occasional backend tasks. My javascript experience is
-            extraordinary for the 5 years I’ve been working with it
+            extraordinary for the 5 years I&apos;ve been working with it
             professionally.
           </Text>
 
           <Heading size={HeadingSizes.Small}>The most amazing</Heading>
 
           <Text size={TextSizes.Large}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-            fuga asperiores voluptatem accusamus magnam voluptatum excepturi
-            ipsum? Nesciunt aperiam possimus, deleniti maiores saepe impedit
-            sint quam odit, maxime illo dignissimos!
+            ... thing I&apos;ve developed is a extremely high performance
+            application for radio news readers. This application handles massive
+            amounts of news articles and interaction was always very steady.
           </Text>
 
           <Heading size={HeadingSizes.Small}>Education</Heading>
