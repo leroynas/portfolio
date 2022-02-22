@@ -1,7 +1,6 @@
-import React, { FunctionComponent, ReactNode } from 'react';
-
-import { Link } from 'gatsby';
 import classNames from 'classnames';
+import { Link } from 'gatsby';
+import React, { FunctionComponent, ReactNode } from 'react';
 
 const className = {
   root: `font-sans font-bold py-2 px-4 rounded drop-shadow-md`,

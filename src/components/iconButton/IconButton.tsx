@@ -1,7 +1,6 @@
-import React, { FunctionComponent } from 'react';
-
-import { Link } from 'gatsby';
 import classNames from 'classnames';
+import { Link } from 'gatsby';
+import React, { FunctionComponent } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export enum IconButtonVariants {

@@ -1,5 +1,6 @@
-import React, { FunctionComponent } from 'react';
 import { Link } from 'gatsby';
+import React, { FunctionComponent } from 'react';
+
 import Navigation from './Navigation';
 
 interface HeaderProps {
@@ -7,8 +8,8 @@ interface HeaderProps {
 }
 
 const className = {
-  root: `bg-gray-900 px-2 py-6`,
-  container: `max-w-5xl mx-auto flex justify-between`,
+  root: `bg-gray-900`,
+  container: `max-w-5xl mx-auto px-8 py-6 flex justify-between`,
   title: `text-lg font-bold text-white`,
 };
 

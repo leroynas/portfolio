@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
 import { Link } from 'gatsby';
+import React, { FunctionComponent } from 'react';
 
 const className = {
   root: `flex gap-4 text-white`,
@@ -9,7 +9,6 @@ const className = {
 
 const items = [
   { to: '/about', title: 'About' },
-  { to: '/education', title: 'Education' },
   { to: '/work-experience', title: 'Work experience' },
   { to: '/cases', title: 'Cases' },
 ];
