@@ -4,8 +4,8 @@ import Text from '../common/text/Text';
 
 const className = {
   root: `flex justify-between items-center`,
-  bar: `w-36 h-2 bg-gray-200`,
-  indicator: `h-2 bg-blue-500`,
+  bar: `w-36 h-2 rounded-sm bg-gray-200`,
+  indicator: `h-2 rounded-sm bg-blue-500`,
 };
 
 interface SkillProps {
