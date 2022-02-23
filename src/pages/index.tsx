@@ -15,7 +15,7 @@ const className = {
   container: `max-w-5xl w-full mx-auto flex justify-between items-center`,
   content: `w-2/3 text-white`,
   typewriter: `flex items-center gap-3`,
-  image: `w-1/3 ml-16`,
+  image: `w-1/3 ml-16 border-8 border-white`,
   next: `absolute bottom-24`,
 };
 
@@ -25,7 +25,7 @@ const IndexPage = () => (
       <div className={className.container}>
         <div className={className.content}>
           <div>
-            <Heading size={HeadingSizes.Medium} mono>
+            <Heading size={HeadingSizes.Large} mono>
               {data.title}
             </Heading>
           </div>
@@ -33,7 +33,7 @@ const IndexPage = () => (
           <div>
             <Heading
               className={className.typewriter}
-              size={HeadingSizes.Medium}
+              size={HeadingSizes.Large}
               mono
             >
               A <Typewriter key="a" words={data.skills} />
