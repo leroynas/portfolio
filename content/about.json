@@ -15,14 +15,14 @@
     "title": "Education",
     "items": [
       {
-        "title": "HAVO Natuur & Techniek",
-        "name": "Merletcollege Cuijk",
-        "period": "2009-2015"
-      },
-      {
-        "title": "MBO Certificate in Software Engineering",
+        "title": "Secondary vocational education (software engineering)",
         "name": "ROC de Leijgraaf",
         "period": "2015-2018"
+      },
+      {
+        "title": "Senior general secondary education",
+        "name": "Merletcollege Cuijk",
+        "period": "2009-2015"
       }
     ]
   },
@@ -32,7 +32,7 @@
       {
         "title": "React Nanodegree",
         "provider": "Udacity",
-        "period": "2019 - PRESENT"
+        "period": "2019"
       }
     ]
   },
