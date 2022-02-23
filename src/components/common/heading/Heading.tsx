@@ -14,7 +14,7 @@ interface HeadingProps {
 }
 
 const className = {
-  root: `block font-bold leading-snug last:mb0 first:mt-0`,
+  root: `block font-bold leading-snug last:mb-0 first:mt-0`,
   sizes: {
     [HeadingSizes.Small]: `text-2xl mb-4 mt-6`,
     [HeadingSizes.Medium]: `text-4xl mb-6 mt-8`,
