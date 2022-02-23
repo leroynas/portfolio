@@ -1,0 +1,89 @@
+{
+  "about": {
+    "title": "Hi, I'm Leroy",
+    "description": "After graduating I directly started working at my last internship. This was a digital agency that gave me a lot of time and freedom to develop myself with new technologies and soft skills. I&apos;ve been working for 5 years of different frontend projects (react/vue) and the occasional backend tasks. My javascript experience is extraordinary for the 5 years I&apos;ve been working with it professionally."
+  },
+  "impressive": {
+    "title": "The most amazing",
+    "description": "... thing I've developed is a extremely high performance application for radio news readers. This application handles massive amounts of news articles and interaction was always very steady."
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fuga asperiores voluptatem accusamus magnam voluptatum excepturi ipsum? Nesciunt aperiam possimus, deleniti maiores saepe impedit sint quam odit, maxime illo dignissimos!"
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "title": "HAVO Natuur & Techniek",
+        "name": "Merletcollege Cuijk",
+        "period": "2009-2015"
+      },
+      {
+        "title": "MBO Certificate in Software Engineering",
+        "name": "ROC de Leijgraaf",
+        "period": "2015-2018"
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certification",
+    "items": [
+      {
+        "title": "React Nanodegree",
+        "provider": "Udacity",
+        "period": "2019 - PRESENT"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      {
+        "title": "HTML",
+        "alpha": 1
+      },
+      {
+        "title": "CSS",
+        "alpha": 1
+      },
+      {
+        "title": "Javascript",
+        "alpha": 0.8
+      },
+      {
+        "title": "Typescript",
+        "alpha": 0.8
+      },
+      {
+        "title": "PHP",
+        "alpha": 0.5
+      }
+    ]
+  },
+  "libraries": {
+    "title": "Libraries",
+    "items": [
+      {
+        "title": "React",
+        "alpha": 0.9
+      },
+      {
+        "title": "Gatsby",
+        "alpha": 0.9
+      },
+      {
+        "title": "Vue",
+        "alpha": 0.8
+      },
+      {
+        "title": "Redux",
+        "alpha": 0.7
+      },
+      {
+        "title": "Node",
+        "alpha": 0.7
+      }
+    ]
+  }
+}
