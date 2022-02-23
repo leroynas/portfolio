@@ -7,11 +7,11 @@ const className = {
 };
 
 interface PaneProps {
-  between: boolean;
+  between?: boolean;
   children: ReactNode;
 }
 
-const Pane: FunctionComponent<PaneProps> = ({ between, children }) => (
+const Pane: FunctionComponent<PaneProps> = ({ between = false, children }) => (
   <div className={classNames(className.root, between && className.between)}>
     {children}
   </div>
