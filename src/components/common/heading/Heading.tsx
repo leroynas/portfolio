@@ -10,7 +10,7 @@ export enum HeadingSizes {
 interface HeadingProps {
   className?: string;
   size: HeadingSizes;
-  mono: boolean;
+  mono?: boolean;
   children: ReactNode;
 }
 
@@ -18,8 +18,8 @@ const className = {
   root: `block font-bold leading-snug last:mb-0 first:mt-0`,
   sizes: {
     [HeadingSizes.Small]: `text-2xl mb-4 mt-6`,
-    [HeadingSizes.Medium]: `text-4xl mb-6 mt-8`,
-    [HeadingSizes.Large]: `text-6xl mb-8 mt-6`,
+    [HeadingSizes.Medium]: `text-3xl mb-6 mt-8`,
+    [HeadingSizes.Large]: `text-5xl mb-8 mt-6`,
   },
   mono: `font-mono`,
 };
