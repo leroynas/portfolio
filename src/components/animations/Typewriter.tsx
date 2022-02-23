@@ -17,7 +17,7 @@ const TYPING_INTERVAL_BACKSPACE = 80;
 
 const className = {
   root: `relative inline-flex  items-center h-full mr-2`,
-  cursor: `absolute w-1 h-12 -right-2 bg-blue-300 animate-blink`,
+  cursor: `absolute w-1 h-12 -right-2 bg-white animate-blink`,
 };
 
 const TypeWriter: FunctionComponent<TypeWriterProps> = ({ words }) => {
