@@ -5,7 +5,7 @@ import Text from '../common/text/Text';
 const className = {
   root: `flex justify-between items-center`,
   bar: `w-36 h-2 rounded-sm bg-zinc-200`,
-  indicator: `h-2 rounded-sm bg-blue-500`,
+  indicator: `h-2 rounded-sm bg-blue-500 animate-increase`,
 };
 
 interface SkillProps {
@@ -18,10 +18,9 @@ const Skill: FunctionComponent<SkillProps> = ({ title, alpha }) => (
     <Text bold>{title}</Text>
 
     <div className={className.bar}>
-      <div
-        className={className.indicator}
-        style={{ width: `${alpha * 100}%` }}
-      />
+      <div style={{ width: `${alpha * 100}%` }}>
+        <div className={className.indicator} />
+      </div>
     </div>
   </div>
 );
