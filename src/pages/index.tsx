@@ -25,12 +25,18 @@ const IndexPage = () => (
       <div className={className.container}>
         <div className={className.content}>
           <div>
-            <Heading size={HeadingSizes.Large}>{data.title}</Heading>
+            <Heading size={HeadingSizes.Medium} mono>
+              {data.title}
+            </Heading>
           </div>
 
           <div>
-            <Heading className={className.typewriter} size={HeadingSizes.Large}>
-              A <Typewriter key="a" words={data.skills} /> developer
+            <Heading
+              className={className.typewriter}
+              size={HeadingSizes.Medium}
+              mono
+            >
+              A <Typewriter key="a" words={data.skills} />
             </Heading>
           </div>
         </div>
