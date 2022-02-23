@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       keyframes: {
         blink: {
-          '100%': { background: 'transparent' },
+          '100%': { opacity: '0' },
         },
       },
       animation: {
