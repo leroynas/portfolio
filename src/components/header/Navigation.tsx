@@ -9,7 +9,7 @@ const className = {
 
 const items = [
   { to: '/about', title: 'About' },
-  { to: '/work-experience', title: 'Work experience' },
+  { to: '/work', title: 'Work experience' },
   { to: '/cases', title: 'Cases' },
 ];
 
