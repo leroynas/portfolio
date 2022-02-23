@@ -1,4 +1,5 @@
 {
   "title": "Hi, I'm Leroy",
-  "subtitle": "A frontend developer."
+  "subtitle": "A frontend developer.",
+  "skills": ["frontend", "typescript", "react", "vue"]
 }
