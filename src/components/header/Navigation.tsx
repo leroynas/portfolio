@@ -8,7 +8,7 @@ const className = {
 };
 
 const items = [
-  { to: '/about', title: 'About' },
+  { to: '/about', title: 'About me' },
   { to: '/work', title: 'Work experience' },
   { to: '/cases', title: 'Cases' },
 ];
