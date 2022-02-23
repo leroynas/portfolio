@@ -10,6 +10,7 @@ export enum HeadingSizes {
 interface HeadingProps {
   className?: string;
   size: HeadingSizes;
+  mono: boolean;
   children: ReactNode;
 }
 
@@ -20,15 +21,22 @@ const className = {
     [HeadingSizes.Medium]: `text-4xl mb-6 mt-8`,
     [HeadingSizes.Large]: `text-6xl mb-8 mt-6`,
   },
+  mono: `font-mono`,
 };
 
 const Heading: FunctionComponent<HeadingProps> = ({
   size,
+  mono = false,
   children,
   className: classNameProp,
 }) => (
   <span
-    className={classNames(classNameProp, className.root, className.sizes[size])}
+    className={classNames(
+      classNameProp,
+      className.root,
+      className.sizes[size],
+      mono && className.mono
+    )}
   >
     {children}
   </span>
