@@ -11,11 +11,13 @@ interface TypeWriterProps {
 }
 
 const TYPING_DELAY = 800;
-const TYPING_SPEED = 280;
+const TYPING_INTERVAL_MIN = 100;
+const TYPING_INTERVAL_MAX = 180;
+const TYPING_INTERVAL_BACKSPACE = 80;
 
 const className = {
   root: `relative inline-flex  items-center h-full mr-2`,
-  cursor: `absolute w-1 h-16 -right-2 bg-white animate-blink`,
+  cursor: `absolute w-1 h-12 -right-2 bg-blue-300 animate-blink`,
 };
 
 const TypeWriter: FunctionComponent<TypeWriterProps> = ({ words }) => {
@@ -23,6 +25,13 @@ const TypeWriter: FunctionComponent<TypeWriterProps> = ({ words }) => {
   const charIndex = useRef(0);
   const forward = useRef(false);
   const [text, setText] = useState('');
+
+  const getInterval = useCallback(() => {
+    if (!forward.current) return TYPING_INTERVAL_BACKSPACE;
+
+    const distance = TYPING_INTERVAL_MAX - TYPING_INTERVAL_MIN;
+    return Math.floor(Math.random() * (distance + 1) + TYPING_INTERVAL_MIN);
+  }, []);
 
   const increase = useCallback(() => {
     const word = words[wordIndex.current];
@@ -55,9 +64,9 @@ const TypeWriter: FunctionComponent<TypeWriterProps> = ({ words }) => {
           decrease();
         }
       },
-      start ? TYPING_DELAY : TYPING_SPEED
+      start ? TYPING_DELAY : getInterval()
     );
-  }, [words, text, increase, decrease]);
+  }, [words, text, increase, decrease, getInterval]);
 
   useEffect(() => {
     const timeout = typeWriter();
