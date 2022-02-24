@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { FunctionComponent, ReactNode } from 'react';
 
 const className = {
-  root: `px-4 py-3 rounded bg-zinc-100`,
+  root: `px-4 py-3 rounded bg-zinc-100 dark:bg-zinc-800`,
   between: `flex justify-between items-center`,
 };
 

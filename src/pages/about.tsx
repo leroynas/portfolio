@@ -12,7 +12,7 @@ import Skill from '../components/skill/Skill';
 
 const className = {
   root: `flex items-start`,
-  content: `w-2/3 text-zinc-900 text-lg`,
+  content: `w-2/3 text-lg`,
   aside: `ml-16 w-1/3`,
   title: `font-bold text-4xl`,
 };

@@ -15,7 +15,7 @@ interface TextProps {
 }
 
 const className = {
-  root: `text-zinc-900 leading-normal`,
+  root: `text-zinc-900 leading-normal dark:text-white`,
   muted: `text-zinc-500`,
   bold: `font-semibold`,
   sizes: {
