@@ -13,6 +13,10 @@ interface ThemeState {
 }
 
 const getInitialTheme = () => {
+  if (typeof localStorage === 'undefined') {
+    return ThemeModes.Light;
+  }
+
   const dark =
     localStorage.theme === 'dark' ||
     (!('theme' in localStorage) &&
