@@ -10,7 +10,6 @@ const className = {
 const items = [
   { to: '/about', title: 'About me' },
   { to: '/work', title: 'Work experience' },
-  { to: '/cases', title: 'Cases' },
 ];
 
 const Navigation: FunctionComponent = () => (
