@@ -7,11 +7,14 @@ import Pane from '../components/common/pane/Pane';
 import Stack from '../components/common/stack/Stack';
 import Text, { TextSizes } from '../components/common/text/Text';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import Timeline from '../components/timeline/Timeline';
 import TimelineItem from '../components/timeline/TimelineItem';
 
 const IndexPage = () => (
   <Layout>
+    <Seo title="Work experience" description="Work experience" />
+
     <Container>
       <Heading size={HeadingSizes.Medium}>{data.title}</Heading>
 

@@ -8,6 +8,7 @@ import Pane from '../components/common/pane/Pane';
 import Stack from '../components/common/stack/Stack';
 import Text, { TextSizes } from '../components/common/text/Text';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 import Skill from '../components/skill/Skill';
 
 const className = {
@@ -19,6 +20,8 @@ const className = {
 
 const IndexPage = () => (
   <Layout>
+    <Seo title="About me" description="About me" />
+
     <Container>
       <div className={className.root}>
         <div className={className.content}>
