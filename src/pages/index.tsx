@@ -9,6 +9,7 @@ import IconButton, {
   IconButtonVariants,
 } from '../components/common/iconButton/IconButton';
 import Layout from '../components/layout/Layout';
+import Seo from '../components/seo/Seo';
 
 const className = {
   wrapper: `absolute inset-0 flex items-center justify-center bg-zinc-900`,
@@ -21,6 +22,8 @@ const className = {
 
 const IndexPage = () => (
   <Layout>
+    <Seo title="Home" description="Home" />
+
     <div className={className.wrapper}>
       <div className={className.container}>
         <div className={className.content}>

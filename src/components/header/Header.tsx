@@ -6,11 +6,8 @@ import IconButton, {
   IconButtonVariants,
 } from '../common/iconButton/IconButton';
 import { Theme, ThemeModes } from '../layout/useTheme';
+import useMeta from '../seo/useMeta';
 import Navigation from './Navigation';
-
-interface HeaderProps {
-  siteTitle: string;
-}
 
 const className = {
   root: `bg-zinc-900`,
@@ -19,7 +16,8 @@ const className = {
   actions: `flex gap-8 items-center`,
 };
 
-const Header: FunctionComponent<HeaderProps> = ({ siteTitle }) => {
+const Header: FunctionComponent = () => {
+  const meta = useMeta();
   const themeState = useContext(Theme);
 
   const icon = useMemo(
@@ -34,7 +32,7 @@ const Header: FunctionComponent<HeaderProps> = ({ siteTitle }) => {
     <header className={className.root}>
       <div className={className.container}>
         <Link to="/" className={className.title}>
-          {siteTitle}
+          {meta.title}
         </Link>
 
         <div className={className.actions}>

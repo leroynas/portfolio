@@ -1,6 +1,5 @@
 import './layout.css';
 
-import { graphql, useStaticQuery } from 'gatsby';
 import React, { FunctionComponent, ReactNode } from 'react';
 
 import Header from '../header/Header';
@@ -18,21 +17,11 @@ const className = {
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   const themeState = useTheme();
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
     <Theme.Provider value={themeState}>
       <div className={themeState.theme}>
         <div className={className.root}>
-          <Header siteTitle={data.site.siteMetadata?.title} />
+          <Header />
           <main className={className.main}>{children}</main>
         </div>
       </div>
